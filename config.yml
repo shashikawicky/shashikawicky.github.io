@@ -12,7 +12,7 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
+        - name: Books2
           url: books/
           weight: 5 
         - name: Papers
