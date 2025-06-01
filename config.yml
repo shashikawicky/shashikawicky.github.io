@@ -54,7 +54,7 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: shashika wicky
+          title: shashika wickramarachchi
           subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
           imageUrl: "MY.jpg"
           imageWidth: 160
