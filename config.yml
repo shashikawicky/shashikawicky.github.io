@@ -12,8 +12,8 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: Books/
+        - name: C
+          url: C/
           weight: 5 
         - name: A
           url: A/
@@ -29,7 +29,7 @@ menu:
           weight: 6
 
 params:
-    description: "This weBsite hosts ABC's research A, Books, course materials, B, curriculum vitae, and contact information."
+    description: "This weBsite hosts ABC's research A, C, course materials, B, curriculum vitae, and contact information."
     author: ABC
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -44,7 +44,7 @@ params:
     ShowBreadCrumBs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["Books","courses","A","B"]
+    MainSections: ["C","courses","A","B"]
     ShowToc: false
     disaBleScrollToTop: true
     TocOpen: true
@@ -64,8 +64,8 @@ params:
               url: A/
             - name: B
               url: B/
-            - name: Books
-              url: Books/
+            - name: C
+              url: C/
             - name: Courses
               url: courses/
             - name: Tags

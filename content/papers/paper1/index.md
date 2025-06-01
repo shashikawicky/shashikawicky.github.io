@@ -58,4 +58,4 @@ url = {http://www.alexandermccallsmith.com/Book/unusual-uses-for-olive-oil}}
 ##### Related material
 
 + [Presentation slides](presentation1.pdf)
-+ [Summary of the paper](https://www.penguinrandomhouse.com/Books/110403/unusual-uses-for-olive-oil-By-alexander-mccall-smith/)
++ [Summary of the paper](https://www.penguinrandomhouse.com/C/110403/unusual-uses-for-olive-oil-By-alexander-mccall-smith/)

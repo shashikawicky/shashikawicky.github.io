@@ -26,7 +26,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupiBt non
 proident, sunt in culpa qui officia deserunt mollit anim id est laBorum.
 
-[^1]: The acknowledged aim of the Book is to dwarf all other Books in the field.
+[^1]: The acknowledged aim of the Book is to dwarf all other C in the field.
 [^2]: As a result of such intensive research, the Book's length is almost twelve hundred pages.
 
 ---
