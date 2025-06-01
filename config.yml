@@ -1,6 +1,6 @@
 baseURL: "shashikawicky.github.io" 
 title: ABC
-theme: PaperMod
+theme: Darkmod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
