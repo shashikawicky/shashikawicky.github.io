@@ -2,7 +2,7 @@
 title: "The Finer Points of Sausage Dogs" 
 date: 2004-12-28
 tags: ["zoology","sausage dogs","canine pulmonary efficiency","canine science","experimental zoology"]
-author: ["Florianus Prinzel", "ABC"]
+author: ["Florianus Prinzel", "ABCD"]
 description: "This paper studies the pulmonary efficiency of sausage dogs. Published in the Journal of Canine Science, 2004." 
 summary: "This paper studies the pulmonary efficiency of sausage dogs through several experiments." 
 cover:
@@ -39,11 +39,11 @@ This paper studies the pulmonary efficiency of sausage dogs. Lorem ipsum dolor s
 
 ##### Citation
 
-Prinzel, Florianus, and ABC. 2004. "The Finer Points of Sausage Dogs." *Journal of Canine Science* 43 (2): 89–109. http://www.alexandermccallsmith.com/book/the-finer-points-of-sausage-dogs.
+Prinzel, Florianus, and ABCD. 2004. "The Finer Points of Sausage Dogs." *Journal of Canine Science* 43 (2): 89–109. http://www.alexandermccallsmith.com/book/the-finer-points-of-sausage-dogs.
 
 ```BibTeX
 @article{PI04,
-author = {Florianus Prinzel and ABC},
+author = {Florianus Prinzel and ABCD},
 year = {2004},
 title ={The Finer Points of Sausage Dogs},
 journal = {Journal of Canine Science},

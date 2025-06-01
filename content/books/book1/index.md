@@ -2,7 +2,7 @@
 title: "Portugese Irregular Verbs" 
 date: 1997-01-01
 tags: ["Portugese","irregular verbs","philology"]
-author: ["ABC"]
+author: ["ABCD"]
 description: "This book discusses Portugese irregular verbs in great details."
 summary: "This book discusses Portugese irregular verbs in great details."
 cover:
@@ -64,11 +64,11 @@ Praesent at eros a sapien sagittis scelerisque at a nulla. Aliquam erat volutpat
 
 #### Citation
 
-ABC. 1997. *Portugese Irregular Verbs*. Regensburg, Germany: Regensburg University Press. http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs.
+ABCD. 1997. *Portugese Irregular Verbs*. Regensburg, Germany: Regensburg University Press. http://www.alexandermccallsmith.com/book/portuguese-irregular-verbs.
 
 ```BibTeX
 @book{I97,
-author = {ABC},
+author = {ABCD},
 year = {1997},
 title = {Portugese Irregular Verbs},
 publisher = {Regensburg University Press},
