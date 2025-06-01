@@ -1,9 +1,9 @@
-BaseURL: "shashikawicky.githuB.io" 
+baseURL: "shashikawicky.github.io" 
 title: ABC
 theme: PaperMod
 
-enaBleInlineShortcodes: true
-enaBleRoBotsTXT: true
+enableInlineShortcodes: true
+enableRobotsTXT: true
 pagination:
   pagerSize: 20
 
@@ -12,60 +12,60 @@ taxonomies:
 
 menu:
     main:
-        - name: C
-          url: C/
+        - name: Books
+          url: books/
           weight: 5 
-        - name: A
-          url: A/
+        - name: Papers
+          url: papers/
           weight: 2
         - name: Courses
           url: courses/
           weight: 3
-        - name: B
-          url: B/
+        - name: Data
+          url: data/
           weight: 4 
         - name: Blog
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
 
 params:
-    description: "This weBsite hosts ABC's research A, C, course materials, B, curriculum vitae, and contact information."
+    description: "This website hosts ABC's research papers, books, course materials, data, curriculum vitae, and contact information."
     author: ABC
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
     hideFooter: false
-    disaBleThemeToggle: true
+    disableThemeToggle: true
     ShowShareButtons: false
     ShowReadingTime: false
-    disaBleSpecial1stPost: true
-    disaBleAnchoredHeadings: true
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
     ShowPostNavLinks: false
-    ShowBreadCrumBs: false
+    ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["C","courses","A","B"]
+    MainSections: ["books","courses","papers","data"]
     ShowToc: false
-    disaBleScrollToTop: true
+    disableScrollToTop: true
     TocOpen: true
     ShowWordCount: false
     UseHugoToc: true
     comments: false
     math: true
     profileMode:
-          enaBled: true
+          enabled: true
           title: shashika wickramarachchi
-          suBtitle: "I am a Professor in the Institute of Romance Philology at the University of RegensBurg, Germany. My research focuses on Portuguese irregular verBs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of WiesBaden."
+          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
           imageUrl: "MY.jpg"
           imageWidth: 160
           imageHeight: 160
-          Buttons:
-            - name: A
-              url: A/
-            - name: B
-              url: B/
-            - name: C
-              url: C/
+          buttons:
+            - name: Papers
+              url: papers/
+            - name: Data
+              url: data/
+            - name: Books
+              url: books/
             - name: Courses
               url: courses/
             - name: Tags
@@ -79,7 +79,7 @@ params:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensBurg.edu
+          url: mailto:igelfeld@regensburg.edu
         - name: Zoom
           url: https://www.zoom.us/my/igelfeld
         - name: Location
@@ -88,23 +88,23 @@ params:
           url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: GitHuB
-          url: https://githuB.com/pmichaillat
-        - name: SuBstack
-          url: https://pmichaillat.suBstack.com
-        - name: YouTuBe
-          url: https://www.youtuBe.com/@pmichaillat
+        - name: GitHub
+          url: https://github.com/pmichaillat
+        - name: Substack
+          url: https://pmichaillat.substack.com
+        - name: YouTube
+          url: https://www.youtube.com/@pmichaillat
         - name: Twitter
           url: https://x.com/pmichaillat
         - name: Bluesky
-          url: https://Bsky.app/profile/pmichaillat.Bsky.social
+          url: https://bsky.app/profile/pmichaillat.bsky.social
 
     assets:
-        disaBleScrollBarStyle: true
+        disableScrollBarStyle: true
     cover:
         hiddenInList: false
         hiddenInSingle: true
-    laBel:
+    label:
       text: "ABC"
       icon: favicon.ico
       iconHeight: 18
@@ -116,7 +116,7 @@ markup:
     highlight:
         guessSyntax: true
         style: autumn 
-    taBleOfContents:
+    tableOfContents:
         endLevel: 2
         ordered: false
         startLevel: 2
