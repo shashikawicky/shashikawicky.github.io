@@ -1,4 +1,4 @@
-.buttons,
+.Buttons,
 .main .profile {
     display: flex;
     justify-content: center;
@@ -18,26 +18,26 @@
 }
 
 .profile img {
-    border-radius: 50%;
+    Border-radius: 50%;
 }
 
-.buttons {
+.Buttons {
     flex-wrap: wrap;
     max-width: 400px;
 }
 
-.button {
-    background: var(--tertiary);
-    border-radius: var(--radius);
+.Button {
+    Background: var(--tertiary);
+    Border-radius: var(--radius);
     margin: 8px;
     padding: 6px;
     transition: transform 0.1s;
 }
 
-.button-inner {
+.Button-inner {
     padding: 0 8px;
 }
 
-.button:active {
+.Button:active {
     transform: scale(0.96);
 }

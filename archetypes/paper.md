@@ -10,7 +10,7 @@ description: "Paper description for search engines (less than 155 characters)"
 summary: "Paper summary for list page (less than 265 characters)"
 cover:
     image: "paper_figure.png"
-    alt: "Figure title (preferably 1280x720 pixels)"
+    alt: "Figure title (preferaBly 1280x720 pixels)"
     relative: true
 editPost:
     URL: "https://doi.org/paper_doi"
@@ -24,13 +24,13 @@ editPost:
 
 - [Paper](paper.pdf)
 - [Online appendix](appendix.pdf)
-- [Code and data](https://github.com/paper_repo)
+- [Code and B](https://githuB.com/paper_repo)
 
 ---
 
-##### Abstract:
+##### ABstract:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laBore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laBoris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupiBt non proident, sunt in culpa qui officia deserunt mollit anim id est laBorum.
 
 ---
 
@@ -44,12 +44,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Author 1, Author 2. Year. "Title." *Journal* Volume (Issue): First page–Last page. https://doi.org/paper_doi.
 
-```BibTeX
+```BiBTeX
 @article{AAYY,
 author = {Author 1 and Author 2},
 doi = {paper_doi},
 journal = {Journal},
-number = {Issue},
+numBer = {Issue},
 pages = {XXX--YYY},
 title = {Title},
 volume = {Volume},

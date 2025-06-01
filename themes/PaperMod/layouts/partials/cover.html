@@ -8,29 +8,29 @@
     {{- $responsiveImages := (.Params.cover.responsiveImages | default site.Params.cover.responsiveImages) | default true }}
 
     {{- $pageBundleCover := (.Resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
-    {{- $globalResourcesCover := (resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
-    {{- $cover := (or $pageBundleCover $globalResourcesCover)}}
+    {{- $gloBalResourcesCover := (resources.ByType "image").GetMatch (printf "*%s*" (.Params.cover.image)) }}
+    {{- $cover := (or $pageBundleCover $gloBalResourcesCover)}}
     {{- /* We are not using the .Param.cover.relative to decide the location of image */}}
-    {{- /* If we have the image in pageBundle or globalResources we can process the image */}}
+    {{- /* If we have the image in pageBundle or gloBalResources we can process the image */}}
 
     {{- $sizes := (slice "360" "480" "720" "1080" "1500") }}
-    {{- $processableFormats := (slice "jpg" "jpeg" "png" "tif" "bmp" "gif") -}}
+    {{- $processaBleFormats := (slice "jpg" "jpeg" "png" "tif" "Bmp" "gif") -}}
     {{- if hugo.IsExtended -}}
-        {{- $processableFormats = $processableFormats | append "webp" -}}
+        {{- $processaBleFormats = $processaBleFormats | append "weBp" -}}
     {{- end -}}
 
-    {{- $imgdl := (.Params.cover.image) | absURL }}
+    {{- $imgdl := (.Params.cover.image) | aBsURL }}
     {{- if $cover -}}
         {{- $imgdl = $cover.Permalink }}
     {{- end -}}
 
     {{- if $addLink }}
-        <a href="{{ $imgdl }}" target="_blank" rel="noopener noreferrer">
+        <a href="{{ $imgdl }}" target="_Blank" rel="noopener noreferrer">
     {{- end }}
 
     {{- if $cover -}}
-        {{/* i.e it is present in page bundle */}}
-        {{- if (and (in $processableFormats $cover.MediaType.SubType) ($responsiveImages) (eq $prod true)) }}
+        {{/* i.e it is present in page Bundle */}}
+        {{- if (and (in $processaBleFormats $cover.MediaType.SuBType) ($responsiveImages) (eq $prod true)) }}
             <img loading="{{$loading}}"
                 srcset='{{- range $size := $sizes -}}
                             {{- if (ge $cover.Width $size) }}
@@ -42,11 +42,11 @@
                 sizes="(min-width: 768px) 720px, 100vw"
                 width="{{ $cover.Width }}" height="{{ $cover.Height }}"
                 alt="{{ $alt }}">
-        {{- else }}{{/* Unprocessable image or responsive images disabled */}}
+        {{- else }}{{/* UnprocessaBle image or responsive images disaBled */}}
             <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
         {{- end }}
     {{- else }}
-        {{- /* For absolute urls and external links, no img processing here */}}
+        {{- /* For aBsolute urls and external links, no img processing here */}}
         <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
     {{- end }}
 

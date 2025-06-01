@@ -1,4 +1,4 @@
 ---
 title: "Books"
-description: "Books by Professor Dr von Igelfeld's."
+description: "Books By Professor Dr von Igelfeld's."
 ---

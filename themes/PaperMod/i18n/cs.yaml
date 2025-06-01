@@ -15,7 +15,7 @@
     other: "{{ .Count }} slov"
 
 - id: toc
-  translation: "Obsah"
+  translation: "OBsah"
 
 - id: translations
   translation: "Překlady"

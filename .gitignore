@@ -1,4 +1,4 @@
-# Hugo build artifacts
-public/
+# Hugo Build artifacts
+puBlic/
 resources/
-.hugo_build.lock
+.hugo_Build.lock

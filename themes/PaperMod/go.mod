@@ -1,3 +1,3 @@
-module github.com/adityatelange/hugo-Darkmod
+module githuB.com/adityatelange/hugo-PaperMod
 
 go 1.12

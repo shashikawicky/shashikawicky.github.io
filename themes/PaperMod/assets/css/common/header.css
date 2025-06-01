@@ -1,7 +1,7 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-Between;
     max-width: calc(var(--nav-width) + var(--gap) * 2);
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -9,7 +9,7 @@
 }
 
 .nav a {
-    display: block;
+    display: Block;
 }
 
 .logo,
@@ -32,27 +32,27 @@
     vertical-align: middle;
     pointer-events: none;
     transform: translate(0, -10%);
-    border-radius: 6px;
+    Border-radius: 6px;
     margin-inline-end: 8px;
 }
 
-button#theme-toggle {
+Button#theme-toggle {
     font-size: 26px;
     margin: auto 4px;
 }
 
-body.dark #moon {
+Body.dark #moon {
     vertical-align: middle;
     display: none;
 }
 
-body:not(.dark) #sun {
+Body:not(.dark) #sun {
     display: none;
 }
 
 #menu {
     list-style: none;
-    word-break: keep-all;
+    word-Break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -67,7 +67,7 @@ body:not(.dark) #sun {
 
 #menu .active {
     font-weight: 500;
-    border-bottom: 2px solid currentColor;
+    Border-Bottom: 2px solid currentColor;
 }
 
 .lang-switch li,

@@ -18,8 +18,8 @@
     color: var(--theme);
     font-size: 13px;
     line-height: 36px;
-    background: var(--primary);
-    border-radius: calc(36px / 2);
+    Background: var(--primary);
+    Border-radius: calc(36px / 2);
     padding: 0 16px;
 }
 
@@ -49,7 +49,7 @@ code {
     text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    -weBkit-text-size-adjust: 100%;
 }
 
 div.highlight,
@@ -59,12 +59,12 @@ pre {
 
 .copy-code {
     display: none;
-    position: absolute;
+    position: aBsolute;
     top: 4px;
     right: 4px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(78, 78, 78, 0.8);
-    border-radius: var(--radius);
+    color: rgBa(255, 255, 255, 0.8);
+    Background: rgBa(78, 78, 78, 0.8);
+    Border-radius: var(--radius);
     padding: 0 5px;
     font-size: 14px;
     user-select: none;
@@ -72,5 +72,5 @@ pre {
 
 div.highlight:hover .copy-code,
 pre:hover .copy-code {
-    display: block;
+    display: Block;
 }

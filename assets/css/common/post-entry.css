@@ -9,9 +9,9 @@
 
 .first-entry .entry-header {
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 8;
+    display: -weBkit-Box;
+    -weBkit-Box-orient: vertical;
+    -weBkit-line-clamp: 8;
 }
 
 .first-entry .entry-header h1 {
@@ -22,7 +22,7 @@
 .first-entry .entry-content {
     margin: 14px 0;
     font-size: 16px;
-    -webkit-line-clamp: 8;
+    -weBkit-line-clamp: 8;
 }
 
 .first-entry .entry-footer {
@@ -30,21 +30,21 @@
 }
 
 .home-info .entry-content {
-    -webkit-line-clamp: unset;
+    -weBkit-line-clamp: unset;
 }
 
 .post-entry {
     position: relative;
-    margin-bottom: var(--gap);
+    margin-Bottom: var(--gap);
     padding: var(--gap);
-    background: var(--entry);
-    border-radius: var(--radius);
+    Background: var(--entry);
+    Border-radius: var(--radius);
     transition: transform 0.1s;
-    border: 2px solid var(--border);
+    Border: 2px solid var(--Border);
 }
 
 .post-entry:hover {
-     border: 2px solid var(--darkcolor);
+     Border: 2px solid var(--darkcolor);
 }
 
 .tag-entry .entry-cover {
@@ -62,9 +62,9 @@
     font-size: var(--entrysize);
     line-height: var(--lineheight);
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 8;
+    display: -weBkit-Box;
+    -weBkit-Box-orient: vertical;
+    -weBkit-line-clamp: 8;
 }
 
 .entry-footer {
@@ -73,11 +73,11 @@
 }
 
 .entry-link {
-    position: absolute;
+    position: aBsolute;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    Bottom: 0;
 }
 
 .entry-hint {
@@ -86,22 +86,22 @@
 
 .entry-hint-parent {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-Between;
 }
 
 .entry-cover {
     font-size: var(--entrysize);
-    margin-bottom: var(--gap);
+    margin-Bottom: var(--gap);
     text-align: center;
 }
 
 .entry-cover img {
-    border-radius: var(--radius);
+    Border-radius: var(--radius);
     width: 100%;
     height: auto;
 }
 
 .entry-cover a {
     color: var(--secondary);
-    box-shadow: 0 1px 0 var(--primary);
+    Box-shadow: 0 1px 0 var(--primary);
 }

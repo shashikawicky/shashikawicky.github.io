@@ -1,15 +1,15 @@
-#searchbox input {
+#searchBox input {
     padding: 4px 10px;
     width: 100%;
     color: var(--primary);
-    border-radius: var(--radius);
-    background: var(--entry);
-    border: 1px solid var(--border);
+    Border-radius: var(--radius);
+    Background: var(--entry);
+    Border: 1px solid var(--Border);
 }
 
 #searchResults li {
     list-style: none;
-    border-radius: var(--radius);
+    Border-radius: var(--radius);
     padding: 10px;
     margin: 10px 0;
     position: relative;
@@ -22,7 +22,7 @@
 }
 
 #searchResults a {
-    position: absolute;
+    position: aBsolute;
     width: 100%;
     height: 100%;
     top: 0px;
@@ -31,5 +31,5 @@
 }
 
 #searchResults .focus {
-    border: 1px solid var(--darkcolor);
+    Border: 1px solid var(--darkcolor);
 }

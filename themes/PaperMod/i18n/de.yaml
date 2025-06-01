@@ -18,13 +18,13 @@
   translation: "Inhaltsverzeichnis"
 
 - id: translations
-  translation: "Übersetzungen"
+  translation: "ÜBersetzungen"
 
 - id: home
   translation: "Home"
 
 - id: edit_post
-  translation: "Bearbeiten"
+  translation: "BearBeiten"
 
 - id: code_copy
   translation: "Kopieren"

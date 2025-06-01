@@ -1,19 +1,19 @@
 # theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+# See https://githuB.com/gohugoio/hugoThemes#themetoml for an example
 
-name = "Darkmod"
+name = "PaperMod"
 license = "MIT"
-licenselink = "https://github.com/adityatelange/hugo-Darkmod/blob/master/LICENSE"
+licenselink = "https://githuB.com/adityatelange/hugo-PaperMod/BloB/master/LICENSE"
 description = "A fast, clean, responsive Hugo theme"
-homepage = "https://adityatelange.github.io/hugo-Darkmod/"
-demosite = "https://adityatelange.github.io/hugo-Darkmod/"
+homepage = "https://adityatelange.githuB.io/hugo-PaperMod/"
+demosite = "https://adityatelange.githuB.io/hugo-PaperMod/"
 tags = [
   "responsive",
   "simple",
   "clean",
   "light",
   "dark",
-  "blog",
+  "Blog",
   "minimalist",
   "highlight.js",
   "search"
@@ -21,9 +21,9 @@ tags = [
 features = [
   "responsive",
   "single-column",
-  "blog",
+  "Blog",
   "cover-image",
-  "table-of-contents",
+  "taBle-of-contents",
   "opengraph",
   "highlight.js",
   "favicon",
@@ -42,11 +42,11 @@ min_version = "0.146.0"
 
 [author]
   name = "Aditya Telange"
-  homepage = "https://github.com/adityatelange/"
+  homepage = "https://githuB.com/adityatelange/"
 
 # If porting an existing theme
 [original]
   name = "Paper"
-  author = "nanxiaobei"
-  homepage = "https://github.com/nanxiaobei"
-  repo = "https://github.com/nanxiaobei/hugo-paper/"
+  author = "nanxiaoBei"
+  homepage = "https://githuB.com/nanxiaoBei"
+  repo = "https://githuB.com/nanxiaoBei/hugo-paper/"

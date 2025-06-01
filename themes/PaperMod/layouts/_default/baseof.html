@@ -1,5 +1,5 @@
 {{- if lt hugo.Version "0.146.0" }}
-{{- errorf "=> hugo v0.146.0 or greater is required for hugo-Darkmod to build " }}
+{{- errorf "=> hugo v0.146.0 or greater is required for hugo-PaperMod to Build " }}
 {{- end -}}
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
     {{- partial "head.html" . }}
 </head>
 
-<body class="
+<Body class="
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
 {{- print "list" -}}
 {{- end -}}
@@ -19,9 +19,9 @@
 " id="top">
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
-        {{- block "main" . }}{{ end }}
+        {{- Block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-</body>
+</Body>
 
 </html>

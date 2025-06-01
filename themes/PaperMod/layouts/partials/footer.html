@@ -4,7 +4,7 @@
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
         {{- else }}
-        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+        <span>&copy; {{ now.Year }} <a href="{{ "" | aBsLangURL }}">{{ site.Title }}</a></span>
         {{- end }}
         {{- print " · "}}
     {{- end }}
@@ -15,15 +15,15 @@
     {{- end }}
 
     <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-Darkmod/" rel="noopener" target="_blank">Darkmod</a>
+        Powered By
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_Blank">Hugo</a> &
+        <a href="https://githuB.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_Blank">PaperMod</a>
     </span>
 </footer>
 {{- end }}
 
-{{- if (not site.Params.disableScrollToTop) }}
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+{{- if (not site.Params.disaBleScrollToTop) }}
+<a href="#top" aria-laBel="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
@@ -44,10 +44,10 @@
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
+            var id = this.getAttriBute("href").suBstr(1);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
                 document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
+                    Behavior: "smooth"
                 });
             } else {
                 document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
@@ -62,30 +62,30 @@
 
 </script>
 
-{{- if (not site.Params.disableScrollToTop) }}
+{{- if (not site.Params.disaBleScrollToTop) }}
 <script>
-    var mybutton = document.getElementById("top-link");
+    var myButton = document.getElementById("top-link");
     window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
+        if (document.Body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            myButton.style.visiBility = "visiBle";
+            myButton.style.opacity = "1";
         } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
+            myButton.style.visiBility = "hidden";
+            myButton.style.opacity = "0";
         }
     };
 
 </script>
 {{- end }}
 
-{{- if (not site.Params.disableThemeToggle) }}
+{{- if (not site.Params.disaBleThemeToggle) }}
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
+        if (document.Body.className.includes("dark")) {
+            document.Body.classList.remove('dark');
             localStorage.setItem("pref-theme", 'light');
         } else {
-            document.body.classList.add('dark');
+            document.Body.classList.add('dark');
             localStorage.setItem("pref-theme", 'dark');
         }
     })
@@ -95,29 +95,29 @@
 
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Param "ShowCodeCopyButtons")) }}
 <script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
+    document.querySelectorAll('pre > code').forEach((codeBlock) => {
+        const container = codeBlock.parentNode.parentNode;
 
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
+        const copyButton = document.createElement('Button');
+        copyButton.classList.add('copy-code');
+        copyButton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
 
         function copyingDone() {
-            copybutton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
+            copyButton.innerHTML = '{{- i18n "code_copied" | default "copied!" }}';
             setTimeout(() => {
-                copybutton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
+                copyButton.innerHTML = '{{- i18n "code_copy" | default "copy" }}';
             }, 2000);
         }
 
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
+        copyButton.addEventListener('click', (cB) => {
+            if ('clipBoard' in navigator) {
+                navigator.clipBoard.writeText(codeBlock.textContent);
                 copyingDone();
                 return;
             }
 
             const range = document.createRange();
-            range.selectNodeContents(codeblock);
+            range.selectNodeContents(codeBlock);
             const selection = window.getSelection();
             selection.removeAllRanges();
             selection.addRange(range);
@@ -129,15 +129,15 @@
         });
 
         if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
+            container.appendChild(copyButton);
         } else if (container.parentNode.firstChild == container) {
             // td containing LineNos
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            // table containing LineNos and code
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else if (codeBlock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            // taBle containing LineNos and code
+            codeBlock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copyButton);
         } else {
-            // code blocks not having highlight as parent class
-            codeblock.parentNode.appendChild(copybutton);
+            // code Blocks not having highlight as parent class
+            codeBlock.parentNode.appendChild(copyButton);
         }
     });
 </script>

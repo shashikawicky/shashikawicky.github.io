@@ -1,17 +1,17 @@
-{{- if (.Param "ShowBreadCrumbs") -}}
-<div class="breadcrumbs">
+{{- if (.Param "ShowBreadCrumBs") -}}
+<div class="BreadcrumBs">
     {{- $url := replace .Parent.Permalink (printf "%s" site.Home.Permalink) "" }}
     {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
 
-    <a href="{{ "" | absLangURL }}">{{ i18n "home" | default "Home" }}</a>
+    <a href="{{ "" | aBsLangURL }}">{{ i18n "home" | default "Home" }}</a>
     {{- $scratch := newScratch }}
     {{- range $index, $element := split $lang_url "/" }}
 
     {{- $scratch.Add "path" (printf "%s/" $element )}}
-    {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
+    {{- $Bc_pg := site.GetPage ($scratch.Get "path") -}}
 
-    {{- if (and ($bc_pg) (gt (len . ) 0))}}
-    {{- print "&nbsp;»&nbsp;" | safeHTML -}}<a href="{{ $bc_pg.Permalink }}">{{ $bc_pg.Name }}</a>
+    {{- if (and ($Bc_pg) (gt (len . ) 0))}}
+    {{- print "&nBsp;»&nBsp;" | safeHTML -}}<a href="{{ $Bc_pg.Permalink }}">{{ $Bc_pg.Name }}</a>
     {{- end }}
 
     {{- end -}}

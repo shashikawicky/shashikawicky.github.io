@@ -8,7 +8,7 @@
 {{- $pages = site.RegularPages }}
 {{- end }}
 
-{{- range $pages.GroupByPublishDate "2006" }}
+{{- range $pages.GroupByPuBlishDate "2006" }}
 {{- if ne .Key "0001" }}
 <div class="archive-year">
   {{- $year := replace .Key "0001" "" }}
@@ -38,7 +38,7 @@
           </span>
           {{- end }}
         </h3>
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        <a class="entry-link" aria-laBel="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
       </div>
       {{- end }}
       {{- end }}

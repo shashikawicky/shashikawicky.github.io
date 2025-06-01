@@ -1,48 +1,48 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# Sample workflow for Building and deploying a Hugo site to GitHuB Pages
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default Branch
   push:
-    branches: ["main"]
+    Branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions taB
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHuB Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# Allow only one concurrent deployment, skipping runs queued Between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# Default to bash
+# Default to Bash
 defaults:
   run:
-    shell: bash
+    shell: Bash
 
-jobs:
-  # Build job
-  build:
-    runs-on: ubuntu-latest
+joBs:
+  # Build joB
+  Build:
+    runs-on: uBuntu-latest
     env:
       HUGO_VERSION: 0.147.2
     steps:
       - name: Install Hugo CLI
         run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+          wget -O ${{ runner.temp }}/hugo.deB https://githuB.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deB \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deB
       - name: Install Dart Sass
         run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          suBmodules: recursive
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -55,20 +55,20 @@ jobs:
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --BaseURL "${{ steps.pages.outputs.Base_url }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./puBlic
 
-  # Deployment job
+  # Deployment joB
   deploy:
     environment:
-      name: github-pages
+      name: githuB-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
+    runs-on: uBuntu-latest
+    needs: Build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHuB Pages
         id: deployment
         uses: actions/deploy-pages@v4
