@@ -1,5 +1,5 @@
 baseURL: "shashikawicky.github.io" 
-title: ABCD
+title: ABC
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -29,8 +29,8 @@ menu:
           weight: 6
 
 params:
-    description: "This website hosts ABCD's research papers, books, course materials, data, curriculum vitae, and contact information."
-    author: ABCD
+    description: "This website hosts ABC's research papers, books, course materials, data, curriculum vitae, and contact information."
+    author: ABC
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -105,7 +105,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "ABCD"
+      text: "ABC"
       icon: favicon.ico
       iconHeight: 18
 
