@@ -15,7 +15,7 @@
     other: "{{ .Count }} riječi"
 
 - id: toc
-  translation: "TaBlica Sadržaja"
+  translation: "Tablica Sadržaja"
 
 - id: translations
   translation: "Prijevodi"

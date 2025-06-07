@@ -2,7 +2,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    {{ partial "BreadcrumBs.html" . }}
+    {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">
       {{ .Title }}
       {{- if .Draft }}
@@ -36,7 +36,7 @@
 
   {{- if .Content }}
   <div class="post-content">
-    {{- if not (.Param "disaBleAnchoredHeadings") }}
+    {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
@@ -52,7 +52,7 @@
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}
-    {{- if (and site.Params.ShowShareButtons (ne .Params.disaBleShare true)) }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
   </footer>

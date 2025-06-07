@@ -9,7 +9,7 @@
     padding: calc((var(--footer-height) - var(--gap)) / 2) var(--gap);
     text-align: center;
     line-height: 20px;
-    Background: var(--code-Bg);
+    background: var(--code-bg);
 }
 
 .footer span {
@@ -26,21 +26,21 @@
 }
 
 .footer a:hover {
-    Border-Bottom: 2px solid var(--darkcolor);
+    border-bottom: 2px solid var(--darkcolor);
 }
 
 .top-link {
-    visiBility: hidden;
+    visibility: hidden;
     position: fixed;
-    Bottom: 60px;
+    bottom: 60px;
     right: 30px;
     z-index: 99;
-    Background: var(--tertiary);
+    background: var(--tertiary);
     width: 42px;
     height: 42px;
     padding: 12px;
-    Border-radius: 64px;
-    transition: visiBility 0.5s, opacity 0.8s linear;
+    border-radius: 64px;
+    transition: visibility 0.5s, opacity 0.8s linear;
 }
 
 .top-link,

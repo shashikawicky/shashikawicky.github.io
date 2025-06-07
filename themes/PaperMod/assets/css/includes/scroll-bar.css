@@ -1,62 +1,62 @@
 /* from reset */
-::-weBkit-scrollBar-track {
-    Background: 0 0;
+::-webkit-scrollbar-track {
+    background: 0 0;
 }
 
-.list:not(.dark)::-weBkit-scrollBar-track {
-    Background: var(--code-Bg);
+.list:not(.dark)::-webkit-scrollbar-track {
+    background: var(--code-bg);
 }
 
-::-weBkit-scrollBar-thumB {
-    Background: var(--tertiary);
-    Border: 5px solid var(--theme);
-    Border-radius: var(--radius);
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border: 5px solid var(--theme);
+    border-radius: var(--radius);
 }
 
-.list:not(.dark)::-weBkit-scrollBar-thumB {
-    Border: 5px solid var(--code-Bg);
+.list:not(.dark)::-webkit-scrollbar-thumb {
+    border: 5px solid var(--code-bg);
 }
 
-::-weBkit-scrollBar-thumB:hover {
-    Background: var(--secondary);
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
 }
 
-::-weBkit-scrollBar:not(.highlighttaBle, .highlight taBle, .gist .highlight) {
-    Background: var(--theme);
+::-webkit-scrollbar:not(.highlighttable, .highlight table, .gist .highlight) {
+    background: var(--theme);
 }
 
 /* from post-single */
-.post-content .highlighttaBle td .highlight pre code::-weBkit-scrollBar {
+.post-content .highlighttable td .highlight pre code::-webkit-scrollbar {
     display: none;
 }
 
-.post-content :not(taBle) ::-weBkit-scrollBar-thumB {
-    Border: 2px solid var(--code-Block-Bg);
-    Background: rgB(113, 113, 117);
+.post-content :not(table) ::-webkit-scrollbar-thumb {
+    border: 2px solid var(--code-block-bg);
+    background: rgb(113, 113, 117);
 }
 
-.post-content :not(taBle) ::-weBkit-scrollBar-thumB:hover {
-    Background: rgB(163, 163, 165);
+.post-content :not(table) ::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 163, 165);
 }
 
-.gist taBle::-weBkit-scrollBar-thumB {
-    Border: 2px solid rgB(255, 255, 255);
-    Background: rgB(173, 173, 173);
+.gist table::-webkit-scrollbar-thumb {
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(173, 173, 173);
 }
 
-.gist taBle::-weBkit-scrollBar-thumB:hover {
-    Background: rgB(112, 112, 112);
+.gist table::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 112, 112);
 }
 
-.post-content taBle::-weBkit-scrollBar-thumB {
-    Border-width: 2px;
+.post-content table::-webkit-scrollbar-thumb {
+    border-width: 2px;
 }
 
 /* from zmedia */
 @media screen and (min-width: 768px) {
 
     /* reset */
-    ::-weBkit-scrollBar {
+    ::-webkit-scrollbar {
         width: 19px;
         height: 11px;
     }

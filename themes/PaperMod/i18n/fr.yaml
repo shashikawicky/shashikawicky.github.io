@@ -15,7 +15,7 @@
     other: "{{ .Count }} mots"
 
 - id: toc
-  translation: "TaBle des matières"
+  translation: "Table des matières"
 
 - id: translations
   translation: "Traductions"

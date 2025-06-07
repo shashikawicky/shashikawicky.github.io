@@ -10,31 +10,31 @@ description: "Course description for search engines (less than 155 characters)"
 summary: "Course summary for list page (less than 265 characters)
 cover:
     image: "course_figure.png"
-    alt: "Figure title (preferaBly 1280x720 pixels)"
+    alt: "Figure title (preferably 1280x720 pixels)"
     relative: true
 editPost:
-    URL: "https://youtuBe.com/course_playlist"
-    Text: "YouTuBe playlist"
-disaBleAnchoredHeadings: false
+    URL: "https://youtube.com/course_playlist"
+    Text: "YouTube playlist"
+disableAnchoredHeadings: false
 showToc: true
 
 ---
 
 ## Introduction
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laBore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laBoris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupiBt non proident, sunt in culpa qui officia deserunt mollit anim id est laBorum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ---
 
 ## Part 1
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laBore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laBoris nisi ut aliquip ex ea commodo consequat. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 ##### Lecture videos
 
-1. [Lecture 1](https://youtu.Be/lecture_1)
-2. [Lecture 2](https://youtu.Be/lecture_2)
-3. [Lecture 3](https://youtu.Be/lecture_3)
+1. [Lecture 1](https://youtu.be/lecture_1)
+2. [Lecture 2](https://youtu.be/lecture_2)
+3. [Lecture 3](https://youtu.be/lecture_3)
 
 ##### Lecture notes
 
@@ -45,25 +45,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ##### Readings
 
 - [Paper 1](https://doi.org/paper_1) – Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-- [Paper 2](https://doi.org/paper_2) – Excepteur sint occaecat cupiBt non proident, sunt in culpa qui officia deserunt mollit anim id est laBorum.
+- [Paper 2](https://doi.org/paper_2) – Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ##### Homework
 
 - [Quiz 1](quiz_1.pdf)
 - [Quiz 2](quiz_2.pdf)
-- [ProBlem set 1](ps_1.pdf)
+- [Problem set 1](ps_1.pdf)
 
 ---
 
 ## Part 2
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laBore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laBoris nisi ut aliquip ex ea commodo consequat. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 
 ##### Lecture videos
 
-1. [Lecture 4](https://youtu.Be/lecture_4)
-2. [Lecture 5](https://youtu.Be/lecture_5)
-3. [Lecture 6](https://youtu.Be/lecture_6)
+1. [Lecture 4](https://youtu.be/lecture_4)
+2. [Lecture 5](https://youtu.be/lecture_5)
+3. [Lecture 6](https://youtu.be/lecture_6)
 
 ##### Lecture notes
 
@@ -74,10 +74,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ##### Readings
 
 - [Paper 3](https://doi.org/paper_3) – Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-- [Paper 4](https://doi.org/paper_4) – Excepteur sint occaecat cupiBt non proident, sunt in culpa qui officia deserunt mollit anim id est laBorum.
+- [Paper 4](https://doi.org/paper_4) – Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ##### Homework
 
 - [Quiz 3](quiz_3.pdf)
 - [Quiz 4](quiz_4.pdf)
-- [ProBlem set 2](ps_2.pdf)
+- [Problem set 2](ps_2.pdf)

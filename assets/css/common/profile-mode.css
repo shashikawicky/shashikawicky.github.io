@@ -1,4 +1,4 @@
-.Buttons,
+.buttons,
 .main .profile {
     display: flex;
     justify-content: left;
@@ -23,25 +23,25 @@
 }
 
 .profile img {
-    Border-radius: 50%;
-    Border: 1px solid var(--tertiary);
+    border-radius: 50%;
+    border: 1px solid var(--tertiary);
 }
 
-.Buttons {
+.buttons {
     flex-wrap: wrap;
 }
 
-.Button {
-    Background: var(--tertiary);
-    Border-radius: var(--radius);
+.button {
+    background: var(--tertiary);
+    border-radius: var(--radius);
     margin: 6px 12px 6px 0px;
     padding: 10px;
 }
 
-.Button-inner {
+.button-inner {
     padding: 0 8px;
 }
 
-.Button:hover {
-    Background: var(--lightcolor);
+.button:hover {
+    background: var(--lightcolor);
 }

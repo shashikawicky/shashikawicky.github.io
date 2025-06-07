@@ -1,6 +1,6 @@
 {{- $u := urls.Parse .Destination -}}
 {{- $src := $u.String -}}
-{{- if not $u.IsABs -}}
+{{- if not $u.IsAbs -}}
   {{- $path := strings.TrimPrefix "./" $u.Path }}
   {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
     {{- $src = .RelPermalink -}}
@@ -12,9 +12,9 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-{{- $attriButes := merge .AttriButes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
+{{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "title" (.Title | transform.HTMLEscape) "loading" "lazy") -}}
 <img
-  {{- range $k, $v := $attriButes -}}
+  {{- range $k, $v := $attributes -}}
     {{- if $v -}}
       {{- printf " %s=%q" $k $v | safeHTMLAttr -}}
     {{- end -}}

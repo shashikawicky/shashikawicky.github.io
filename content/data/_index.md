@@ -1,4 +1,4 @@
 ---
-title: "B"
-description: "Bsets on various philological topics."
+title: "Data"
+description: "Datasets on various philological topics."
 ---

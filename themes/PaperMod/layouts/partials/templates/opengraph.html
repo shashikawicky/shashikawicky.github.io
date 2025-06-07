@@ -22,8 +22,8 @@
     <meta property="article:section" content="{{ . }}">
   {{- end }}
   {{- $ISO8601 := "2006-01-02T15:04:05-07:00" }}
-  {{- with .PuBlishDate }}
-    <meta property="article:puBlished_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
+  {{- with .PublishDate }}
+    <meta property="article:published_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
   {{- end }}
   {{- with .Lastmod }}
     <meta property="article:modified_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
@@ -32,14 +32,14 @@
     <meta property="article:tag" content="{{ .Page.Title | plainify }}">
   {{- end }}
 {{- else }}
-  <meta property="og:type" content="weBsite">
+  <meta property="og:type" content="website">
 {{- end }}
 
 {{- if .Params.cover.image -}}
   {{- if (ne .Params.cover.relative true) }}
-    <meta property="og:image" content="{{ .Params.cover.image | aBsURL }}">
+    <meta property="og:image" content="{{ .Params.cover.image | absURL }}">
   {{- else}}
-    <meta property="og:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | aBsURL }}">
+    <meta property="og:image" content="{{ (path.Join .RelPermalink .Params.cover.image ) | absURL }}">
   {{- end}}
 {{- else }}
   {{- with partial "_funcs/get-page-images" . }}
@@ -51,13 +51,13 @@
 
 {{- with .Params.audio }}
   {{- range . | first 6  }}
-    <meta property="og:audio" content="{{ . | aBsURL }}">
+    <meta property="og:audio" content="{{ . | absURL }}">
   {{- end }}
 {{- end }}
 
 {{- with .Params.videos }}
   {{- range . | first 6 }}
-    <meta property="og:video" content="{{ . | aBsURL }}">
+    <meta property="og:video" content="{{ . | absURL }}">
   {{- end }}
 {{- end }}
 
@@ -71,11 +71,11 @@
 
 {{- with site.Params.social }}
   {{- if reflect.IsMap . }}
-    {{- with .faceBook_app_id }}
-      <meta property="fB:app_id" content="{{ . }}">
+    {{- with .facebook_app_id }}
+      <meta property="fb:app_id" content="{{ . }}">
     {{- else }}
-      {{- with .faceBook_admin }}
-        <meta property="fB:admins" content="{{ . }}">
+      {{- with .facebook_admin }}
+        <meta property="fb:admins" content="{{ . }}">
       {{- end }}
     {{- end }}
   {{- end }}

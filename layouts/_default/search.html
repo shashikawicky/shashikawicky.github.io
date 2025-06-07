@@ -1,13 +1,13 @@
 {{- define "main" }}
 
 <header class="page-header">
-<h1>{{ .Title }} &nBsp;</h1>
+<h1>{{ .Title }} &nbsp;</h1>
 </header>
 
-<div id="searchBox">
+<div id="searchbox">
     <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s↵" .Title) }}"
-        aria-laBel="search" type="search" autocomplete="off" maxlength="64">
-    <ul id="searchResults" aria-laBel="search results"></ul>
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
 </div>
 
 {{- end }}{{/* end main */}}

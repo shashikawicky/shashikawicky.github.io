@@ -2,14 +2,14 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{{- ( site.Params.schema.puBlisherType | default "Organization") | title -}}",
+  "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
   "name": {{ site.Title }},
   "url": {{ site.Home.Permalink }},
   "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
-  {{- if (eq site.Params.schema.puBlisherType "Person") }}
-  "image": {{ site.Params.assets.favicon | default "favicon.ico" | aBsURL }},
+  {{- if (eq site.Params.schema.publisherType "Person") }}
+  "image": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
   {{- else }}
-  "logo": {{ site.Params.assets.favicon | default "favicon.ico" | aBsURL }},
+  "logo": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
   {{- end }}
   "sameAs": [
     {{- if site.Params.schema.sameAs }}
@@ -21,38 +21,38 @@
 }
 </script>
 {{- else if (or .IsPage .IsSection) }}
-{{/* BreadcrumBList */}}
+{{/* BreadcrumbList */}}
 {{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
 {{- $lang_url := strings.TrimPrefix ( printf "%s/" .Lang) $url }}
-{{- $Bc_list := (split $lang_url "/")}}
+{{- $bc_list := (split $lang_url "/")}}
 
 {{- $scratch := newScratch }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumBList",
+  "@type": "BreadcrumbList",
   "itemListElement": [
-  {{- range $index, $element := $Bc_list }}
+  {{- range $index, $element := $bc_list }}
 
     {{- $scratch.Add "path" (printf "%s/" $element ) | safeJS }}
-    {{- $Bc_pg := site.GetPage ($scratch.Get "path") -}}
+    {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
 
-    {{- if (and ($Bc_pg) (gt (len . ) 0))}}
+    {{- if (and ($bc_pg) (gt (len . ) 0))}}
     {{- if (and $index)}}, {{end }}
     {
       "@type": "ListItem",
       "position": {{ add 1 $index  }},
-      "name": {{ $Bc_pg.Name }},
-      "item": {{ $Bc_pg.Permalink | safeHTML }}
+      "name": {{ $bc_pg.Name }},
+      "item": {{ $bc_pg.Permalink | safeHTML }}
     }
     {{- end }}
 
   {{- end }}
   {{- /*  self-page addition  */ -}}
-  {{- if (ge (len $Bc_list) 2) }}, {{end }}
+  {{- if (ge (len $bc_list) 2) }}, {{end }}
     {
       "@type": "ListItem",
-      "position": {{len $Bc_list}},
+      "position": {{len $bc_list}},
       "name": {{ .Name }},
       "item": {{ .Permalink | safeHTML }}
     }
@@ -80,9 +80,9 @@
   {{ if .Params.cover.image -}}
   "image":
     {{- if (ne .Params.cover.relative true) -}}
-    {{ .Params.cover.image | aBsURL }},
+    {{ .Params.cover.image | absURL }},
     {{- else -}}
-    {{ (path.Join .RelPermalink .Params.cover.image ) | aBsURL }},
+    {{ (path.Join .RelPermalink .Params.cover.image ) | absURL }},
     {{- end}}
   {{- else }}
     {{- $images := partial "templates/_funcs/get-page-images" . -}}
@@ -90,7 +90,7 @@
   "image": {{ .Permalink }},
     {{- end }}
   {{- end -}}
-  "datePuBlished": {{ .PuBlishDate }},
+  "datePublished": {{ .PublishDate }},
   "dateModified": {{ .Lastmod }},
   {{- with (.Params.author | default site.Params.author) }}
   "author":
@@ -110,15 +110,15 @@
     {{- end -}}
   {{- end }}
   "mainEntityOfPage": {
-    "@type": "WeBPage",
+    "@type": "WebPage",
     "@id": {{ .Permalink | safeHTML }}
   },
-  "puBlisher": {
-    "@type": "{{- ( site.Params.schema.puBlisherType | default "Organization") | title -}}",
+  "publisher": {
+    "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
     "name": {{ site.Title }},
     "logo": {
-      "@type": "ImageOBject",
-      "url": {{ site.Params.assets.favicon | default "favicon.ico" | aBsURL }}
+      "@type": "ImageObject",
+      "url": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }}
     }
   }
 }

@@ -1,5 +1,5 @@
-Blank_issues_enaBled: false
+blank_issues_enabled: false
 contact_links:
   - name: PaperMod Discussions
-    url: https://githuB.com/adityatelange/hugo-PaperMod/discussions
-    aBout: Please ask and answer questions/douBts here, DO NOT open an issue for questions.
+    url: https://github.com/adityatelange/hugo-PaperMod/discussions
+    about: Please ask and answer questions/doubts here, DO NOT open an issue for questions.

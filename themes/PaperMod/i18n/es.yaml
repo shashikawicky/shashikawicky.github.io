@@ -11,11 +11,11 @@
 
 - id: words
   translation:
-    one : "palaBra"
-    other: "{{ .Count }} palaBras"
+    one : "palabra"
+    other: "{{ .Count }} palabras"
 
 - id: toc
-  translation: "TaBla de Contenidos"
+  translation: "Tabla de Contenidos"
 
 - id: translations
   translation: "Traducciones"

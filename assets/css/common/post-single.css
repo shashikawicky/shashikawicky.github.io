@@ -4,17 +4,17 @@
 }
 
 .post-title {
-    margin-Bottom: 20px;
+    margin-bottom: 20px;
     font-size: 36px;
 }
 
 .post-description {
     margin-top: 10px;
-    margin-Bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .post-meta,
-.BreadcrumBs {
+.breadcrumbs {
     color: var(--secondary);
     font-size: 15px;
 }
@@ -23,7 +23,7 @@
     display: inline-flex;
     list-style: none;
     margin: auto 3px;
-    Box-shadow: 0 1px 0 var(--secondary);
+    box-shadow: 0 1px 0 var(--secondary);
 }
 
 .post-content {
@@ -55,14 +55,14 @@
 
 .post-content h4 {
     font-size: 15px;    
-    font-weight: var(--semiBold);
+    font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--gray);
 }
 
 .post-content h5 {
     font-size: 14px;
-    font-weight: var(--semiBold);
+    font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--gray);
 }
@@ -75,14 +75,14 @@
 .post-content a,
 .post-meta a,
 .toc a:hover {
-    Box-shadow: 0 2px 0 var(--darkcolor);
+    box-shadow: 0 2px 0 var(--darkcolor);
     color: currentColor; 
 }
 
 .post-content a code {
     margin: auto 0;
-    Border-radius: 0;
-    Box-shadow: 0 -1px 0 var(--primary) inset;
+    border-radius: 0;
+    box-shadow: 0 -1px 0 var(--primary) inset;
 }
 
 .post-content del {
@@ -94,7 +94,7 @@
 .post-content p,
 .post-content figure,
 .post-content ul {
-    margin-Bottom: var(--content-gap);
+    margin-bottom: var(--content-gap);
 }
 
 .post-content ol,
@@ -112,7 +112,7 @@
 }
 
 .post-content li p {
-    margin-Bottom: 0;
+    margin-bottom: 0;
 }
 
 .post-content dl {
@@ -137,39 +137,39 @@
     margin-top: 10px;
 }
 
-.post-content taBle {
-    margin-Bottom: var(--content-gap);
+.post-content table {
+    margin-bottom: var(--content-gap);
 }
 
-.post-content taBle th,
-.post-content taBle:not(.highlighttaBle, .highlight taBle, .gist .highlight) td {
+.post-content table th,
+.post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
     min-width: 80px;
     padding: 8px 5px;
     line-height: var(--lineheight);
-    Border-Bottom: 1px solid var(--Border);
+    border-bottom: 1px solid var(--border);
 }
 
-.post-content taBle th {
+.post-content table th {
     text-align: start;
     font-size: 14px;
-    font-weight: var(--semiBold);
+    font-weight: var(--semibold);
     text-transform: uppercase;
     color: var(--gray);
-    Border-Bottom: 2px solid var(--tertiary);
+    border-bottom: 2px solid var(--tertiary);
 }
 
-.post-content taBle:not(.highlighttaBle) td code:only-child {
+.post-content table:not(.highlighttable) td code:only-child {
     margin: auto 0;
 }
 
-.post-content .highlight taBle {
-    Border-radius: var(--radius);
+.post-content .highlight table {
+    border-radius: var(--radius);
 }
 
-.post-content .highlight:not(taBle) {
+.post-content .highlight:not(table) {
     margin: 10px auto;
-    Background: var(--code-Block-Bg) !important;
-    Border-radius: var(--radius);
+    background: var(--code-block-bg) !important;
+    border-radius: var(--radius);
     direction: ltr;
 }
 
@@ -185,21 +185,21 @@
     margin: 0;
 }
 
-.post-content .highlighttaBle {
-    taBle-layout: fixed;
+.post-content .highlighttable {
+    table-layout: fixed;
 }
 
-.post-content .highlighttaBle td:first-child {
+.post-content .highlighttable td:first-child {
     width: 40px;
 }
 
-.post-content .highlighttaBle td .linenodiv {
+.post-content .highlighttable td .linenodiv {
     padding-inline-end: 0 !important;
 }
 
-.post-content .highlighttaBle td .highlight,
-.post-content .highlighttaBle td .linenodiv pre {
-    margin-Bottom: 0;
+.post-content .highlighttable td .highlight,
+.post-content .highlighttable td .linenodiv pre {
+    margin-bottom: 0;
 }
 
 .post-content code {
@@ -207,8 +207,8 @@
     padding: 4px 6px;
     font-size: 0.78em;
     line-height: var(--lineheight);
-    Background: var(--code-Bg);
-    Border-radius: 2px;
+    background: var(--code-bg);
+    border-radius: 2px;
 }
 
 .post-content pre code {
@@ -216,23 +216,23 @@
     margin: auto 0;
     padding: 10px;
     color: var(--secondary);
-    Border-radius: var(--radius);
+    border-radius: var(--radius);
     overflow-x: auto;
-    word-Break: Break-all;
+    word-break: break-all;
 }
 
-.post-content Blockquote {
+.post-content blockquote {
     margin: 20px 0;
     padding: 0 20px;
     color: var(--secondary);    
-    Border-inline-start: 6px solid var(--tertiary);
+    border-inline-start: 6px solid var(--tertiary);
 }
 
 .post-content hr {
     margin: 30px 0;
     height: 2px;
-    Background: var(--tertiary);
-    Border: 0;
+    background: var(--tertiary);
+    border: 0;
 }
 
 .post-content iframe {
@@ -240,7 +240,7 @@
 }
 
 .post-content img {
-    Border-radius: 4px;
+    border-radius: 4px;
     margin: 1rem 0;
 }
 
@@ -255,7 +255,7 @@
 .post-content figure > figcaption {
     color: var(--primary);
     font-size: 16px;
-    font-weight: Bold;
+    font-weight: bold;
     margin: 8px 0 16px;
 }
 
@@ -267,9 +267,9 @@
 
 .toc {
     margin: 0 2px 20px 2px;
-    Border: 1px solid var(--Border);
-    Background: var(--code-Bg);
-    Border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
     padding: 0.4em;
 }
 
@@ -278,7 +278,7 @@
 }
 
 .dark .toc {
-    Background: var(--entry);
+    background: var(--entry);
 }
 
 .toc details summary {
@@ -293,7 +293,7 @@
 
 .toc .details {
     display: inline;
-    font-weight: var(--semiBold);
+    font-weight: var(--semibold);
     text-transform: uppercase;
     font-size: 15px;
 }
@@ -318,7 +318,7 @@
 }
 
 .post-footer>* {
-    margin-Bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .post-tags {
@@ -329,34 +329,34 @@
 
 
 .post-tags li {
-    display: inline-Block;
+    display: inline-block;
 }
 
 .post-tags a,
-.share-Buttons,
+.share-buttons,
 .paginav {
-    Border-radius: var(--radius);
-    Background: var(--code-Bg);
+    border-radius: var(--radius);
+    background: var(--code-bg);
 }
 
 .post-tags a {
-    display: Block;
+    display: block;
     padding: 0 10px;
     color: var(--secondary);
     font-size: 16px;
     line-height: 32px;
-    Background: var(--code-Bg);
+    background: var(--code-bg);
 }
 
 .post-tags a:hover {
-    Background: var(--lightcolor);
+    background: var(--lightcolor);
 }
 
 .paginav a:hover {
-    Background: var(--lightcolor);
+    background: var(--lightcolor);
 }
 
-.share-Buttons {
+.share-buttons {
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -364,13 +364,13 @@
     gap: 10px;
 }
 
-.share-Buttons li,
-.share-Buttons a {
+.share-buttons li,
+.share-buttons a {
     display: inline-flex;
 }
 
 
-.share-Buttons a:not(:last-of-type) {
+.share-buttons a:not(:last-of-type) {
     margin-inline-end: 12px;
 }
 
@@ -385,7 +385,7 @@ h6:hover .anchor {
     margin-inline-start: 10px;
     font-weight: 700;
     user-select: none;
-    Box-shadow: 0 0px 0 var(--darkcolor);
+    box-shadow: 0 0px 0 var(--darkcolor);
 }
 
 .paginav {
@@ -397,7 +397,7 @@ h6:hover .anchor {
 .paginav a {
     padding-inline-start: 15px;
     padding-inline-end: 15px;
-    Border-radius: var(--radius);
+    border-radius: var(--radius);
     color: var(--secondary);
 }
 
@@ -433,7 +433,7 @@ img.in-text {
 }
 
 a[href^="#fn:"], a[href^="#fnref:"] {
-     Box-shadow: 0 0px 0 var(--darkcolor);
+     box-shadow: 0 0px 0 var(--darkcolor);
 }
 
 a[href^="#fn:"]:hover, a[href^="#fnref:"]:hover {
