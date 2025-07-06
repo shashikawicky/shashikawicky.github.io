@@ -1,0 +1,15 @@
+   <table>
+     <tr>
+       <th>alphabet 1</th>
+       <th>alphabet 2</th>
+     </tr>
+     <tr>
+       <td><span style="background-color: blue;">ABCD</span></td>
+       <td>EFGH</td>
+     </tr>
+     <tr>
+       <td>IJKL</td>
+       <td><span style="background-color: red;">MNOP</span></td>
+     </tr>
+   </table>
+
